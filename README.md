@@ -15,7 +15,7 @@ Built using Qtcreator, OpenCV 3.2 on C++.
 
 Si necesitas mas informacion acerca del proyecto contactame.
 
-if you need more information about the project contact me. 
+If You need more information about the project contact me. 
 
 ### PD:
 I'm working on a better version of this project with more automatic features without the need to set values
