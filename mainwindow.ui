@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>693</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Practica 2</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="labelColor">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>60</y>
+      <width>150</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelHSV">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>150</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelInrange">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>60</y>
+      <width>150</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>40</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Imagen a Color</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Imagen HSV</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>inRange</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="barraCanal0Min">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>410</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>410</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Canal 0</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="barraCanal0Max">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>410</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdCanal0Min">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>430</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdCanal0Max">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>430</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>460</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Canal 1</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdCanal1Min">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>480</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="barraCanal1Max">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>460</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdCanal1Max">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>480</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="barraCanal1Min">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>460</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>510</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Canal 2</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdCanal2Min">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>530</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="barraCanal2Max">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>510</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdCanal2Max">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>530</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="barraCanal2Min">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>510</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>390</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Valor mínimo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>390</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Valor máximo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelContornos">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>240</y>
+      <width>150</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>111</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Abrir camara</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>220</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Contornos </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>491</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Calibrar color</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_A">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonBuscar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Conectar arduino</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonIniciar">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Iniciar</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonRojo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>71</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;jj&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Rojo</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonVerde">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>71</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Verde</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonAzul">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>71</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Azul</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumberRojo">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>270</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumberVerde">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumberAzul">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>270</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>250</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Rojo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>250</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Verde</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>250</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Azul</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>240</y>
+      <width>381</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>220</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Contadores</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>320</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reset contador</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>320</y>
+      <width>131</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Iniciar contador</string>
+    </property>
+   </widget>
+   <zorder>label_17</zorder>
+   <zorder>label</zorder>
+   <zorder>labelColor</zorder>
+   <zorder>labelHSV</zorder>
+   <zorder>labelInrange</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>barraCanal0Min</zorder>
+   <zorder>label_9</zorder>
+   <zorder>barraCanal0Max</zorder>
+   <zorder>lcdCanal0Min</zorder>
+   <zorder>lcdCanal0Max</zorder>
+   <zorder>label_10</zorder>
+   <zorder>lcdCanal1Min</zorder>
+   <zorder>barraCanal1Max</zorder>
+   <zorder>lcdCanal1Max</zorder>
+   <zorder>barraCanal1Min</zorder>
+   <zorder>label_11</zorder>
+   <zorder>lcdCanal2Min</zorder>
+   <zorder>barraCanal2Max</zorder>
+   <zorder>lcdCanal2Max</zorder>
+   <zorder>barraCanal2Min</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>labelContornos</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_A</zorder>
+   <zorder>buttonBuscar</zorder>
+   <zorder>buttonIniciar</zorder>
+   <zorder>radioButtonRojo</zorder>
+   <zorder>radioButtonVerde</zorder>
+   <zorder>radioButtonAzul</zorder>
+   <zorder>lcdNumberRojo</zorder>
+   <zorder>lcdNumberVerde</zorder>
+   <zorder>lcdNumberAzul</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_18</zorder>
+   <zorder>commandLinkButton</zorder>
+   <zorder>checkBox_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>693</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
